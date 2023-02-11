@@ -2,6 +2,27 @@
     cursor: default;
 }
 
+section {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.section-titles {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.content_bg {
+    background-color: rgba(33, 34, 34, 0.9);
+    min-height: 100vh;
+    height: 100%;
+}
+
+
 /***** Body Style *****/
 
 body {
@@ -9,10 +30,6 @@ body {
     background-size: cover;
 }
 
-.showcase {
-    margin-top: 100px;
-    background-color: rgba(33, 34, 34, 0.9);
-}
 
 /***** End Section *****/
 
@@ -23,7 +40,7 @@ body {
     top: 0;
     width: 100%;
     transition: .9s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-link {
@@ -36,7 +53,7 @@ body {
     transition: all 0.3s;
     height: 2px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(15, 149, 245);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -55,7 +72,6 @@ body {
 /***** Card Style *****/
 
 .projects {
-    background-color: rgba(0, 0, 0, 0.746);
     margin-bottom: 40px;
     padding-bottom: 10px;
 }
@@ -66,6 +82,27 @@ body {
 
 .card:hover {
     transform: scale(1.025);
+}
+
+/***** End Section *****/
+
+
+/***** Body Style *****/
+
+#resume {
+    max-width: 850px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.resume_email {
+    text-decoration: none;
+    color: rgb(16, 43, 125);
+    margin-bottom: 20px;
+}
+
+.resume_header {
+    width: 100%;
 }
 
 /***** End Section *****/
