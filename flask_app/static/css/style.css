@@ -10,6 +10,7 @@
 section {
     padding-top: 100px;
     padding-bottom: 200px;
+    min-height: 80vh;
 }
 
 
@@ -90,6 +91,9 @@ body {
 
 /***** End Section *****/
 
+.showcase{
+    margin-top: 15vh;
+}
 
 /***** Body Style *****/
 

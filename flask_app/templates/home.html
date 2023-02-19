@@ -1,7 +1,9 @@
 {% extends '_base.html' %}{% block title%}Home {%endblock%} {%block content%}
 <!--Showcase, introduction and elevator pitch-->
-<section class="showcase text-light text-center text-sm-start pb-4">
-  <div class="container">
+<section
+  class="d-flex align-content-center text-light text-center text-sm-start"
+>
+  <div class="showcase container">
     <div class="d-md-flex justify-content-between">
       <img
         style="max-height: 400px"
@@ -14,16 +16,14 @@
         class="d-flex flex-column justify-content-center"
       >
         <h1 class="text-start text-light">
-          <span class="text-warning">Hi,</span> my names Ivan.
+          <span class="text-warning">Hi,</span> I'm Ivan.
         </h1>
         <p class="text-start text-light">
-          I'm a full-stack software engineer with a passion for creating
-          seamless user experiences. I am dedicated to producing clean and
-          efficient code and always strive to stay up-to-date with the latest
-          industry trends. My ability to work well under pressure, strong
-          communication skills, and eagerness to learn and grow make me a
-          valuable asset to any team. I am excited to bring my skills and
-          enthusiasm to a challenging full-stack role.
+          I'm a mechanical engineer turned full-stack software engineer. I am
+          dedicated to producing clean and efficient code and always strive to
+          stay up-to-date with the latest industry trends. My ability to work
+          well under pressure, strong communication skills, and eagerness to
+          learn and grow make me a valuable asset to any team.
         </p>
         <div>
           <button class="btn btn-primary btn-lg text-light">Contact Me</button>
@@ -36,15 +36,13 @@
 <!--Recent Project link cards.-->
 <section class="mt-5">
   <div class="container projects">
-    <h2 class="section-titles text-light text-center mx-2 mb-5">
-      Recent Projects
-    </h2>
+    <h2 class="section-titles text-light text-start mb-2">Projects</h2>
     <div
       style="height: 1px"
       class="mw-50 bg-light align-self-center mb-2"
     ></div>
     <div class="row">
-      <div class="col-md my-2">
+      <div class="col-md my-2 d-flex align-items-stretch">
         <div class="card">
           <div class="bg-image hover-zoom">
             <img
@@ -62,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md my-2">
+      <div class="col-md my-2 d-flex align-items-stretch">
         <div class="card">
           <img
             src="/static/images/generic-logo.webp"
@@ -78,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md my-2">
+      <div class="col-md my-2 d-flex align-items-stretch">
         <div class="card">
           <img
             src="/static/images/generic-logo.webp"
