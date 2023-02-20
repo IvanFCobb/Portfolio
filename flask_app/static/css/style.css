@@ -10,7 +10,7 @@
 section {
     padding-top: 100px;
     padding-bottom: 200px;
-    min-height: 80vh;
+    min-height: 100dvh;
 }
 
 
@@ -21,7 +21,7 @@ section {
 
 .content_bg {
     background-color: rgba(33, 34, 34, 0.9);
-    min-height: 100vh;
+    min-height: 100dvh;
     height: 100%;
 }
 
@@ -31,7 +31,7 @@ section {
 body {
     background-image: url('/static/images/solid_background_colors_shapes.png');
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100dvh;
 
 }
 
@@ -92,7 +92,7 @@ body {
 /***** End Section *****/
 
 .showcase{
-    margin-top: 15vh;
+    align-self: center;
 }
 
 /***** Body Style *****/
@@ -114,3 +114,9 @@ body {
 }
 
 /***** End Section *****/
+
+/***** Experience Section *****/
+.icon{
+    height: 100px;
+    min-width: 100px;
+}

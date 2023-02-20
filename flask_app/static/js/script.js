@@ -9,3 +9,9 @@
 //     prevScrollpos = currentScrollPos;
 // }
 
+$(document).ready(function() {
+    // Collapse the navbar when a link is clicked
+    $(".navbar-nav a").click(function() {
+      $(".navbar-collapse").collapse("hide");
+    });
+  });
