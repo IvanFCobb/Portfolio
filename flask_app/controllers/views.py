@@ -23,7 +23,9 @@ def contact():
 
         # Set the email subject and message
         email_subject = "Contact Form Submission: " + subject
-        email_message = "Name: " + name + "\nEmail: " + email + "\n\n" + message
+        email_message = "From: %s\r\nTo: %s\r\n\r\n | " + \
+            name + " | " + email + " | " + message
+        print(email_message)
 
         # Send the email using smtplib or a third-party email service
         server = smtplib.SMTP('smtp.gmail.com', 587)
