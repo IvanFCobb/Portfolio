@@ -2,7 +2,7 @@
 
 <!--Showcase, introduction and elevator pitch-->
 <section
-  class="d-flex align-content-center text-light text-center text-sm-start"
+  class="section-hero d-flex align-content-center text-light text-center text-sm-start"
 >
   <div class="showcase container">
     <div class="d-md-flex justify-content-between">
@@ -19,8 +19,8 @@
         <h1 class="text-start text-light">
           <span class="text-warning">Hi,</span> I'm Ivan.
         </h1>
-        <p class="text-start text-light">
-          I'm a mechanical engineer turned full-stack software engineer. I am
+        <p class="hero-text text-start text-light">
+          I'm a mechanical engineer turned full-stack software developer. I am
           dedicated to producing clean and efficient code and always strive to
           stay up-to-date with the latest industry trends. My ability to work
           well under pressure, strong communication skills, and eagerness to
@@ -38,6 +38,7 @@
 
 <!--Recent Project link cards.-->
 <section id="projects" class="">
+  <div class="spacer-small"></div>
   <div class="container projects">
     <h2 class="section-titles text-light text-start mb-2">Projects</h2>
     <div
@@ -46,20 +47,19 @@
     ></div>
     <div class="row">
       <div class="col-md my-2 d-flex align-items-stretch">
-        <div class="card">
-          <div class="bg-image hover-zoom">
-            <img
-              src="/static/images/generic-logo.webp"
-              class="card-img-top w-100"
-              alt="..."
-            />
-          </div>
-          <div class="card-body">
-            <p class="card-text">
-              A notes app where users can create, read, update, and delete
-              tasks.
-            </p>
-            <a href="/projects#1" class="stretched-link"></a>
+        <div
+          class="project-description d-flex flex-column justify-content-between"
+        >
+          <h2 class="text-light">Project #1</h2>
+          <p class="text-light mt-5 h-100">
+            Description: Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam, at. Nam illum vero possimus, magni aspernatur harum quas
+            nesciunt, ullam soluta quia iure enim rerum tenetur libero? Quasi,
+            debitis officiis.
+          </p>
+          <div class="project-links align-self-end">
+            <a class="text-light" href="">GitHub</a
+            ><a class="text-light ms-5" href="">Live Site</a>
           </div>
         </div>
       </div>
@@ -76,6 +76,29 @@
               bulk of the card's content.
             </p>
             <a href="/projects#2" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="height: 1px"
+      class="mw-50 bg-light align-self-center my-2"
+    ></div>
+    <div class="row">
+      <div class="col-md my-2 d-flex align-items-stretch">
+        <div
+          class="project-description d-flex flex-column justify-content-between"
+        >
+          <h2 class="text-light">Project #2</h2>
+          <p class="text-light mt-5 h-100">
+            Description: Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam, at. Nam illum vero possimus, magni aspernatur harum quas
+            nesciunt, ullam soluta quia iure enim rerum tenetur libero? Quasi,
+            debitis officiis.
+          </p>
+          <div class="project-links align-self-end">
+            <a class="text-light" href="">GitHub</a
+            ><a class="text-light ms-5" href="">Live Site</a>
           </div>
         </div>
       </div>
@@ -102,6 +125,7 @@
     ></div>
   </div>
 </section>
+<div class="spacer"></div>
 
 <!--Programming Expeience Icons-->
 <section id="experience" class="">
@@ -123,9 +147,9 @@
     ></div>
   </div>
 </section>
-
+<div class="spacer"></div>
 <!--Contact Form-->
-<section id="contact" class="">
+<section id="contact" class="mt-5 pb-5">
   <div class="container">
     <h2 class="section-titles text-light text-start mb-2">Contact</h2>
     <form class="row g-3" method="post" action="{{ url_for('contact') }}">
